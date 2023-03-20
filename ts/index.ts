@@ -2,7 +2,7 @@
 const list = <HTMLUListElement>document.getElementById("todoList");
 const input = <HTMLInputElement>document.getElementById("newTask");
 // Const URI for backend
-const BACKEND_ROOT_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1")?'http://localhost:3001':'https://todo-backend-0trn.onrender.com/';
+const BACKEND_ROOT_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1")?'http://localhost:3001':'https://todo-backend-0trn.onrender.com';
 
 // import Task.ts
 import { Task } from './class/Task.js';
