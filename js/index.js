@@ -2,7 +2,7 @@
 const list = document.getElementById("todoList");
 const input = document.getElementById("newTask");
 // Const URI for backend
-const BACKEND_ROOT_URL = 'http://localhost:3001';
+const BACKEND_ROOT_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1") ? 'http://localhost:3001' : 'https://todo-backend-0trn.onrender.com/';
 // import Todos.ts
 import { Todos } from './class/Todos.js';
 // Create todos object
